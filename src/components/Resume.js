@@ -3,6 +3,8 @@ import { makeStyles } from '@material-ui/core/styles'
 import { Typography, Box } from '@material-ui/core/'
 import Navbar from './Navbar'
 import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
+import Slide from 'react-reveal/Slide';
 
 const useStyles = makeStyles( theme => ({
     mainContainer:{
@@ -114,13 +116,18 @@ const Resume = () => {
             <Navbar/>
             <Box components="header" className={classes.mainContainer}>
                 <Typography variant="h4" align="center" className={classes.containerTitle}>
-                     About
+                    <Slide top>
+                        About
+                    </Slide>
                 </Typography>
                 <Box component ="div" className={classes.timeLine}>
-                
+                    
                     <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
-                        2015
+                        <Zoom>
+                            2015
+                        </Zoom> 
                     </Typography>
+                    
                     <Box component="div" className={classes.timeLineItem}>
                         <Fade left>
                             <Typography variant="h5" align="left" className={classes.subHeading}>
@@ -139,8 +146,10 @@ const Resume = () => {
                     </Box>
                 
                 
-                <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                    <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                    <Zoom>
                         2018
+                    </Zoom>
                     </Typography>
                     <Box component="div" className={classes.timeLineItem}>
                     <Fade right>
@@ -160,7 +169,9 @@ const Resume = () => {
                 
                     
                     <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                    <Zoom>
                         2020
+                    </Zoom> 
                     </Typography>
                     <Box component="div" className={classes.timeLineItem}>
                     <Fade left>
@@ -180,7 +191,9 @@ const Resume = () => {
                     </Fade>
                     </Box>
                     <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                    <Zoom>
                         2021
+                    </Zoom>
                     </Typography>
                     <Box component="div" className={classes.timeLineItem}>
                         <Fade right>
@@ -197,7 +210,9 @@ const Resume = () => {
                         </Fade>
                     </Box>
                     <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                    <Zoom>
                         Present
+                    </Zoom>    
                     </Typography>
                     </Box>
             </Box>
