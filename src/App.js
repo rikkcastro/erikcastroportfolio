@@ -11,7 +11,7 @@ function App() {
    <React.Fragment>
       <CssBaseline/>
       <Route exact path="/" component={Home}/>
-      <Route exact path="/cv" component={Resume}/>
+      <Route exact path="/about" component={Resume}/>
       
    </React.Fragment>
   );

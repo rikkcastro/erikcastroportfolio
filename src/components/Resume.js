@@ -1,17 +1,19 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { Typography, Box } from '@material-ui/core/'
+import { Typography, Box, rgbToHex } from '@material-ui/core/'
 import Navbar from './Navbar'
+import Fade from 'react-reveal/Fade';
 
 const useStyles = makeStyles( theme => ({
     mainContainer:{
-        background:"rgb(21, 21, 21)",
+        background: "rgb(25,25,25)",
         color:"white",
         fontFamily: "Helvetica"
     },
     containerTitle:{
         padding:"3rem 0",
-        textTransform: "uppercase"
+        textTransform: "uppercase",
+        fontWeight: 600,
     },
     timeLine: {
         position: "relative",
@@ -74,6 +76,7 @@ const useStyles = makeStyles( theme => ({
         }
     },
     timeLineYear: {
+        fontWeight: 500,
         textAlign: "center",
         maxWidth: "9.375rem",
         margin: "0 3rem 0 auto",
@@ -111,30 +114,36 @@ const Resume = () => {
             <Navbar/>
             <Box components="header" className={classes.mainContainer}>
                 <Typography variant="h4" align="center" className={classes.containerTitle}>
-                     Experience
+                     About
                 </Typography>
                 <Box component ="div" className={classes.timeLine}>
-                <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                
+                    <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
                         2015
                     </Typography>
                     <Box component="div" className={classes.timeLineItem}>
-                        <Typography variant="h5" align="left" className={classes.subHeading}>
-                            Adamson University: Gettin Started
-                        </Typography>
-                        <Typography variant="body1" align="left">
-                            College Degree
-                        </Typography>
-                        <Typography variant="caption" align="center">
-                            Took up the program Bachelor of Schience Information Technology.
-                            Got introduced to fundamentals of programming. Several programming language has been discussed in different courses
-                            such as C++, C#, Java, php, HTML CSS and experienced using it in lots of class projects in major courses. 
-                            IDEs, enterprise database systems and few other development tools also been discussed. BASIC FUNDAMENTALS OBTAINED
-                        </Typography>
+                        <Fade left>
+                            <Typography variant="h5" align="left" className={classes.subHeading}>
+                                Adamson University: Gettin Started
+                            </Typography>
+                            <Typography variant="body1" align="left">
+                                College Degree
+                            </Typography>
+                            <Typography variant="caption" align="justify">
+                                Took up the program Bachelor of Schience Information Technology.
+                                Got introduced to fundamentals of programming. Several programming language has been discussed in different courses
+                                such as C++, C#, Java, php, HTML CSS and experienced using it in lots of class projects in major courses. 
+                                IDEs, enterprise database systems and few other development tools also been discussed. BASICS of Programming OBTAINED
+                            </Typography>
+                        </Fade>
                     </Box>
-                    <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                
+                
+                <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
                         2018
                     </Typography>
                     <Box component="div" className={classes.timeLineItem}>
+                    <Fade right>
                         <Typography variant="h5" align="left" className={classes.subHeading}>
                             Adamson University: Main Capstone
                         </Typography>
@@ -145,13 +154,16 @@ const Resume = () => {
                             First large scale project development experience, from research to analyzation of data to development to testing the system and into implementing it. 
                             Experienced lots of coding, debugging and configuration, figured out how frontend, backend, data storage operate in a single project, few frameworks
                             also used. Failed few capstone defense but eventually completed it making it 100% working and attain the objectives. C# WINDOWS FORM DEVELOPMENT SKILL OBTAINED
-                            
                         </Typography>
+                    </Fade>
                     </Box>
+                
+                    
                     <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
                         2020
                     </Typography>
                     <Box component="div" className={classes.timeLineItem}>
+                    <Fade left>
                         <Typography variant="h5" align="left" className={classes.subHeading}>
                             Zuitt.co
                         </Typography>
@@ -165,22 +177,24 @@ const Resume = () => {
                             More undertanding in building block of codes, separation of concern 
                             and maintaning the best practices when it comes to development. MERN STACK WEB DEVELOPMENT SKILL OBTAINED
                         </Typography>
+                    </Fade>
                     </Box>
                     <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
                         2021
                     </Typography>
                     <Box component="div" className={classes.timeLineItem}>
-                        <Typography variant="h5" align="left" className={classes.subHeading}>
-                            Self-Training 
-                        </Typography>
-                        <Typography variant="body1" align="left">
-                            Continuous learning without any associates but the Resources on the Internet
-                        </Typography>
-                        <Typography variant="caption" align="center">
-                            After a month of job hunting still got no good job offer, decided to work on few projects using such as ASP.NET MVC and ASP.NET Core API 
-                            to acquire new skill. ASP.NET WEB DEVELOPMENT SKILL OBTAINED
-                               
-                        </Typography>
+                        <Fade right>
+                            <Typography variant="h5" align="left" className={classes.subHeading}>
+                                Self-Training 
+                            </Typography>
+                            <Typography variant="body1" align="left">
+                                Continuous learning without any associates but the Resources on the Internet
+                            </Typography>
+                            <Typography variant="caption" align="center">
+                                After a month of job hunting still got no good job offer, decided to work on few projects using different tools such as ASP.NET MVC and ASP.NET Core API 
+                                to acquire new skill. Completed 1 project so far.
+                            </Typography>
+                        </Fade>
                     </Box>
                     <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
                         Present
