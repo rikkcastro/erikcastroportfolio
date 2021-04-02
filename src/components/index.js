@@ -6,7 +6,8 @@ import { makeStyles } from '@material-ui/styles'
 
 const useStyles = makeStyles({
     particlesCanva: {
-        position: "absolute"
+        position: "absolute",
+        opacity: "0.3"
     }
 })
 
@@ -24,7 +25,14 @@ const Home = () => {
                          density: {
                              enable: true,
                              value_are: 900
-                         }
+                         },
+                         line_linked: {
+            				shadow: {
+            					enable: true,
+            					color: "#3CA9D1",
+            					blur: 5
+            				}
+            			}
                      },
                      shape:{
                          type: "circle",
@@ -40,16 +48,6 @@ const Home = () => {
                              enable: true,
                              speed: 6,
                              size_min: 0.1,
-                             sync: true
-                         }
-                     },
-                     opacity: {
-                         value: 1,
-                         random: true,
-                         anim: {
-                             enable: true,
-                             speed: 1,
-                             opacity_min: 0.1,
                              sync: true
                          }
                      }

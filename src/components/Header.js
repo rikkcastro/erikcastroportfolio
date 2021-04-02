@@ -53,7 +53,7 @@ const classes = useStyles()
                 <br/>
                     <Typography className={classes.subtitle} variant="h5">
                         <Typed
-                        strings={["Web Design", "API Developer", "Full Stack Developer"]} 
+                        strings={["Web App Design", "API Developer", "Full Stack Developer"]} 
                         typeSpeed={40}
                         backSpeed={60}
                         loop />

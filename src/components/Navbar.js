@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Link } from 'react-router-dom'
 import { AppBar, Toolbar, ListItem, IconButton, Avatar, Divider, Box, List, ListItemIcon, ListItemText } from "@material-ui/core"
 import { AssignmentInd, Home, Apps, ContactMail } from "@material-ui/icons"
 import { makeStyles } from '@material-ui/core/styles' 
@@ -10,7 +11,7 @@ import Fade from 'react-reveal/Fade';
 const useStyles = makeStyles (theme => ({
     menuSliderContainer: {
         width: 250,
-        background: "rgb(28, 28, 28)",
+        background: "rgb(21, 21, 21)",
         height:"100%",
         
     },
@@ -37,19 +38,23 @@ const useStyles = makeStyles (theme => ({
 const menuItems = [
     {
         listIcon: <Home/>,
-        listText:"Home"
+        listText:"Home",
+        listPath: "/"
     },
     {
         listIcon: <AssignmentInd/>,
-        listText:"Resume"
+        listText:"CV",
+        listPath: "/cv"
     },
     {
         listIcon: <Apps/>,
-        listText:"Portfolio"
+        listText:"Portfolio",
+        listPath: "/portfolio"
     },
     {
         listIcon: <ContactMail/>,
-        listText:"Contacts"
+        listText:"Contacts",
+        listPath: "/contacts"
     }
 ]
 
@@ -76,7 +81,7 @@ const Navbar = () => {
                     <List>
                         {menuItems.map((lsItem, key)=>(
                              <Fade left>
-                                <ListItem button key={key}>
+                                <ListItem button key={key} component={Link} to={lsItem.listPath}>
                                     <ListItemIcon className={classes.listItem}>
                                         {lsItem.listIcon}
                                     </ListItemIcon>
