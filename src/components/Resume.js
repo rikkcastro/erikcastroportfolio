@@ -1,7 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Typography, Box } from '@material-ui/core/'
-import Navbar from './Navbar'
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import Slide from 'react-reveal/Slide';
@@ -113,7 +112,6 @@ const Resume = () => {
     const classes = useStyles()
     return (
         <React.Fragment>
-            <Navbar/>
             <Box components="header" className={classes.mainContainer}>
                 <Typography variant="h4" align="center" className={classes.containerTitle}>
                     <Slide top>
