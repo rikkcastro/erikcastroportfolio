@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { Typography, Box, rgbToHex } from '@material-ui/core/'
+import { Typography, Box } from '@material-ui/core/'
 import Navbar from './Navbar'
 import Fade from 'react-reveal/Fade';
 
