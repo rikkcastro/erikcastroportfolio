@@ -129,7 +129,7 @@ const Resume = () => {
                     <Box component="div" className={classes.timeLineItem}>
                         <Fade left>
                             <Typography variant="h5" align="left" className={classes.subHeading}>
-                                Adamson University: Gettin Started
+                                Adamson University: Getting Started
                             </Typography>
                             <Typography variant="body1" align="left">
                                 College Degree

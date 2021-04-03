@@ -5,7 +5,7 @@ import { AssignmentInd, Home, Apps, ContactMail } from "@material-ui/icons"
 import { makeStyles } from '@material-ui/core/styles' 
 import MobileRightMenuSlider from "@material-ui/core/Drawer"
 import MenuSharpIcon from '@material-ui/icons/MenuSharp';
-import avatar from "./../images/avatar1.jpg"
+import avatar from "./../images/avatar.gif"
 import Fade from 'react-reveal/Fade';
 //Style
 const useStyles = makeStyles (theme => ({

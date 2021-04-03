@@ -2,7 +2,7 @@ import React from 'react'
 import { makeStyles } from "@material-ui/core/styles" 
 import Typed from 'react-typed';
 import { Typography, Avatar, Grid, Box } from "@material-ui/core"
-import avatar from "./../images/avatar1.jpg"
+import avatargif from "./../images/avatar.gif"
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 
@@ -40,7 +40,7 @@ const classes = useStyles()
             <Box className={classes.typedContainer}>
                 <Zoom>
                     <Grid container justify="center">
-                        <Avatar className={classes.avatar} src={avatar} alt="Erik Castro"/>
+                        <Avatar className={classes.avatar} src={avatargif} alt="Erik Castro"/>
                     </Grid>
                 </Zoom>
                 <Fade>
