@@ -3,7 +3,7 @@ import { Box } from '@material-ui/core/'
 import img1 from '../images/projects/1.jpg'
 import img2 from '../images/projects/2.jpg'
 import img3 from '../images/projects/3.jpg'
-import "./Cards.css"
+import "./../Styles/Cards.css"
 import Zoom from 'react-reveal/Zoom';
 
 const Portfolio = () => {
