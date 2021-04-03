@@ -35,7 +35,7 @@ const ContactIndex = () => {
             			}
                      },
                      shape:{
-                         type: "line",
+                         type: "polygon",
                          stroke:{
                              width:1,
                              color: "White"
