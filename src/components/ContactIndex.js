@@ -21,7 +21,7 @@ const ContactIndex = () => {
              params={{
                  particles: {
                      number: {
-                         value: 100,
+                         value: 20,
                          density: {
                              enable: true,
                              value_are: 900

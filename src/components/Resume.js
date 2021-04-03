@@ -12,7 +12,8 @@ const useStyles = makeStyles( theme => ({
         fontFamily: "Helvetica"
     },
     containerTitle:{
-        padding:"3rem 0",
+        paddingBottom:"1rem",
+        paddingTop: "5rem",
         textTransform: "uppercase",
         fontWeight: 600,
     },

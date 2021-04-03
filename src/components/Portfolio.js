@@ -1,14 +1,39 @@
 import React from 'react'
-import { Box } from '@material-ui/core/'
+import { Box, Typography } from '@material-ui/core/'
+import { makeStyles } from '@material-ui/core/styles'
 import img1 from '../images/projects/1.jpg'
 import img2 from '../images/projects/2.jpg'
 import img3 from '../images/projects/3.jpg'
 import "./../Styles/Cards.css"
 import Zoom from 'react-reveal/Zoom';
+import Slide from 'react-reveal/Slide';
+import Typed from 'react-typed';
+
+const useStyles = makeStyles( theme => ({
+    containerTitle:{
+        paddingLeft: "6.3rem",
+        paddingTop: "5rem",
+        textTransform: "uppercase",
+        fontWeight: 600,
+        color: "white",
+        [theme.breakpoints.up("md")]: {
+            left: "3rem",
+            align:"left"
+            }
+        }
+}));
 
 const Portfolio = () => {
+    const classes = useStyles();
     return (
         <React.Fragment>
+            <Typography variant="h4" className={classes.containerTitle}>
+                    <Slide top>
+                    <Typed 
+                        strings={["Portfolio"]} 
+                        typeSpeed={90} />
+                    </Slide>
+                </Typography>
             <Box components="header">
                 <div className="container-fluid d-flex justify-content-center">
                     <div className="row">

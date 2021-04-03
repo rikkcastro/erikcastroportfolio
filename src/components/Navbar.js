@@ -31,6 +31,10 @@ const useStyles = makeStyles (theme => ({
         margin: "0.5rem auto",
         width: theme.spacing(13),
         color: "white",
+    },
+    fixNav: {
+        position: "fixed",
+        opacity:0.8
     }
 }))
 
@@ -98,7 +102,7 @@ const Navbar = () => {
     return (
         <React.Fragment> 
             <Box component="nav">
-                <AppBar position="static" style={{ background:"black"}}>
+                <AppBar position="static" style={{ background:"black"}} className={classes.fixNav}>
                     <Toolbar>
                         <IconButton onClick={toggleSlider("right", true)}>
                             <MenuSharpIcon style={{ color:"white"}}/>
