@@ -7,12 +7,14 @@ import MobileRightMenuSlider from "@material-ui/core/Drawer"
 import MenuSharpIcon from '@material-ui/icons/MenuSharp';
 import avatar from "./../images/avatar.gif"
 import Fade from 'react-reveal/Fade';
+import Footer from './Footer'
 //Style
 const useStyles = makeStyles (theme => ({
     menuSliderContainer: {
         width: 250,
         background: "rgb(21, 21, 21)",
         height:"100%",
+        opacity: 0.9
         
     },
     avatar: {
@@ -112,6 +114,7 @@ const Navbar = () => {
                         open={state.right}
                         onClose={toggleSlider("right", false)}>
                             {sideList("right")}
+                            <Footer/>
                         </MobileRightMenuSlider>
                     </Toolbar>
                 </AppBar>
