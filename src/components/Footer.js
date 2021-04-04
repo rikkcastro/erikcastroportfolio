@@ -1,9 +1,9 @@
 import React from 'react'
 import { makeStyles } from "@material-ui/core/styles"
 import { BottomNavigation, BottomNavigationAction } from "@material-ui/core"
-import FacebookIcon from '@material-ui/icons/Facebook';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import FacebookIcon from '@material-ui/icons/Facebook';
 
 const useStyles = makeStyles({
     root:{
@@ -27,21 +27,27 @@ const Footer = () => {
     return (
         <React.Fragment>
             <BottomNavigation width="auto" style={{background: "rgb(29,29,29)"}}>
-                <BottomNavigationAction
-                    className={classes.root}
-                    style={{padding: 0}}
-                    icon={<FacebookIcon/>}
-                />
-                <BottomNavigationAction
-                    className={classes.root}
-                    style={{padding: 0}}
-                    icon={<InstagramIcon/>}
-                />
-                <BottomNavigationAction
-                    className={classes.root}
-                    style={{padding: 0}}
-                    icon={<LinkedInIcon/>}
-                />
+                    <BottomNavigationAction
+                        className={classes.root}
+                        style={{padding: 0}}
+                        icon={<FacebookIcon/>}
+                        href="https://www.facebook.com/erik.castro.3551/"
+                        add target="_blank" rel="noreferrer"
+                    />
+                    <BottomNavigationAction
+                        className={classes.root}
+                        style={{padding: 0}}
+                        icon={<InstagramIcon/>}
+                        href="https://www.instagram.com/rikkcastro/"
+                        add target="_blank" rel="noreferrer"
+                    />
+                    <BottomNavigationAction
+                        className={classes.root}
+                        style={{padding: 0}}
+                        icon={<LinkedInIcon/>}
+                        href="https://www.linkedin.com/in/erik-julius-castro-692b8b18b/"
+                        add target="_blank" rel="noreferrer"
+                    />
             </BottomNavigation>
         </React.Fragment>
     )
