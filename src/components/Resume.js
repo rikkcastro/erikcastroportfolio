@@ -138,7 +138,7 @@ const Resume = () => {
                             <Typography variant="caption" align="justify">
                                 Took up the program Bachelor of Schience Information Technology.
                                 Got introduced to fundamentals of programming. Several programming language has been discussed in different courses
-                                such as C++, C#, Java, php, HTML CSS and experienced using it in lots of class projects in major courses. 
+                                such as C++, C#, Java, php, HTML CSS and experienced using it in some of class projects in major courses. 
                                 IDEs, enterprise database systems and few other development tools also been discussed. BASICS of Programming OBTAINED
                             </Typography>
                         </Fade>
@@ -160,7 +160,7 @@ const Resume = () => {
                         </Typography>
                         <Typography variant="caption" align="center">
                             First large scale project development experience, from research to analyzation of data to development to testing the system and into implementing it. 
-                            Experienced lots of coding, debugging and configuration, figured out how frontend, backend, data storage operate in a single project, few frameworks
+                            Experienced many of coding, debugging and configuration, figured out how frontend, backend, data storage operate in a single project, few frameworks
                             also used. Failed few capstone defense but eventually completed it making it 100% working and attain the objectives. C# WINDOWS FORM DEVELOPMENT SKILL OBTAINED
                         </Typography>
                     </Fade>
