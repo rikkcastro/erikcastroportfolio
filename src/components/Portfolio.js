@@ -27,7 +27,7 @@ const useStyles = makeStyles( theme => ({
             }
         },
         DesktopContainerTitle:{
-            paddingLeft: "6.3rem",
+            paddingLeft: "2.3rem",
             paddingTop: "1rem",
             textTransform: "uppercase",
             fontWeight: 600,
@@ -136,6 +136,12 @@ const Portfolio = () => {
                                     </div>
                                 </div>  
                             </Zoom> 
+                        </div>
+                        <div className='col-md-4'>
+
+                        </div>
+                        <div className='col-md-4'>
+
                         </div>
                     </div>
                 </div>
