@@ -107,7 +107,7 @@ const Portfolio = () => {
             <Typography variant="h4" className={classes.DesktopContainerTitle}>
                     <Slide top>
                     <Typed 
-                        strings={["Desktop Apps"]} 
+                        strings={["Windows App"]} 
                         typeSpeed={90} />
                     </Slide>
             </Typography>
