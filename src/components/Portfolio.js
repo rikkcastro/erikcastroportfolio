@@ -4,6 +4,11 @@ import { makeStyles } from '@material-ui/core/styles'
 import img1 from '../images/projects/1.jpg'
 import img2 from '../images/projects/2.jpg'
 import img3 from '../images/projects/3.jpg'
+import imgd1 from '../images/projects/img1.jpg'
+import imgd2 from '../images/projects/img2.jpg'
+import imgd3 from '../images/projects/img3.jpg'
+import imgd4 from '../images/projects/img4.jpg'
+import imgd5 from '../images/projects/img5.jpg'
 import "./../Styles/Cards.css"
 import Zoom from 'react-reveal/Zoom';
 import Slide from 'react-reveal/Slide';
@@ -20,7 +25,18 @@ const useStyles = makeStyles( theme => ({
             left: "3rem",
             align:"left"
             }
-        }
+        },
+        DesktopContainerTitle:{
+            paddingLeft: "6.3rem",
+            paddingTop: "1rem",
+            textTransform: "uppercase",
+            fontWeight: 600,
+            color: "white",
+            [theme.breakpoints.up("md")]: {
+                left: "3rem",
+                align:"left"
+                }
+            }
 }));
 
 const Portfolio = () => {
@@ -30,7 +46,7 @@ const Portfolio = () => {
             <Typography variant="h4" className={classes.containerTitle}>
                     <Slide top>
                     <Typed 
-                        strings={["Portfolio"]} 
+                        strings={["Web Apps"]} 
                         typeSpeed={90} />
                     </Slide>
                 </Typography>
@@ -38,7 +54,7 @@ const Portfolio = () => {
                 <div className="container-fluid d-flex justify-content-center">
                     <div className="row">
                         <div className='col-md-4'>
-                            <Zoom left>
+                            <Zoom>
                                 <div className="card text-center shadow" style={{ background:"rgb(21,21,21)"}}>
                                     <div className="overflow">
                                         <img src={img1} alt="image1" className="card-img-top imagesize"/>
@@ -70,7 +86,7 @@ const Portfolio = () => {
                             </Zoom> 
                         </div>
                         <div className='col-md-4'>
-                            <Zoom right>
+                            <Zoom>
                                 <div className="card text-center shadow" style={{ background:"rgb(21,21,21)"}}>
                                     <div className="overflow">
                                         <img src={img3} alt="image3" className="card-img-top imagesize"/>
@@ -84,12 +100,46 @@ const Portfolio = () => {
                                     </div>
                                 </div>   
                             </Zoom>
-                             
                         </div>
                     </div>
                 </div>
             </Box>
-            
+            <Typography variant="h4" className={classes.DesktopContainerTitle}>
+                    <Slide top>
+                    <Typed 
+                        strings={["Desktop Apps"]} 
+                        typeSpeed={90} />
+                    </Slide>
+            </Typography>
+            <Box components="header">
+                <div className="container-fluid d-flex justify-content-center">
+                    <div className="row">
+                        <div className='col-md-4'>
+                            <Zoom>
+                                <div className="card text-center shadow" style={{ background:"rgb(21,21,21)"}}>
+                                    <div className="overflow">
+                                        <div id="slider">
+                                            <figure>
+                                                <img src={imgd1} alt="imaged1" className="card-img-top imagesize"/>
+                                                <img src={imgd2} alt="imaged2" className="card-img-top imagesize"/>
+                                                <img src={imgd3} alt="imaged3" className="card-img-top imagesize"/>
+                                                <img src={imgd4} alt="imaged4" className="card-img-top imagesize"/>
+                                                <img src={imgd5} alt="imaged5" className="card-img-top imagesize"/>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div className="card-body text-white">   
+                                            <h4 className="">Enrollment System: for Tertiary Level of City University of Pasay</h4>
+                                            <p className="card-text text-white">
+                                                •Visual Studio •c#.Net WindowsForm •MSSQL •BunifuFramework •MetroFramework
+                                            </p>
+                                    </div>
+                                </div>  
+                            </Zoom> 
+                        </div>
+                    </div>
+                </div>
+            </Box>
         </React.Fragment>
     )
 }
