@@ -16,7 +16,7 @@ import Typed from 'react-typed';
 
 const useStyles = makeStyles( theme => ({
     containerTitle:{
-        paddingLeft: "6.3rem",
+        paddingLeft: "5.3rem",
         paddingTop: "5rem",
         textTransform: "uppercase",
         fontWeight: 600,
