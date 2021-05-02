@@ -4,6 +4,8 @@ import { makeStyles } from '@material-ui/core/styles'
 import img1 from '../images/projects/1.jpg'
 import img2 from '../images/projects/2.jpg'
 import img3 from '../images/projects/3.jpg'
+import img4 from '../images/projects/4.jpg'
+import img5 from '../images/projects/5.jpg'
 import imgd1 from '../images/projects/img1.jpg'
 import imgd2 from '../images/projects/img2.jpg'
 import imgd3 from '../images/projects/img3.jpg'
@@ -46,7 +48,7 @@ const Portfolio = () => {
             <Typography variant="h4" className={classes.containerTitle}>
                     <Slide top>
                     <Typed 
-                        strings={["Web Apps"]} 
+                        strings={["Portfolio"]} 
                         typeSpeed={90} />
                     </Slide>
                 </Typography>
@@ -104,13 +106,6 @@ const Portfolio = () => {
                     </div>
                 </div>
             </Box>
-            <Typography variant="h4" className={classes.DesktopContainerTitle}>
-                    <Slide top>
-                    <Typed 
-                        strings={["Windows App"]} 
-                        typeSpeed={90} />
-                    </Slide>
-            </Typography>
             <Box components="header">
                 <div className="container-fluid d-flex justify-content-center">
                     <div className="row">
@@ -138,10 +133,36 @@ const Portfolio = () => {
                             </Zoom> 
                         </div>
                         <div className='col-md-4'>
-
+                            <Zoom>
+                                <div className="card text-center shadow" style={{ background:"rgb(21,21,21)"}}>
+                                    <div className="overflow">
+                                        <img src={img4} alt="image4" className="card-img-top imagesize"/>
+                                    </div>
+                                    <div className="card-body text-white">   
+                                            <h4 className="">First Portfolio</h4>
+                                            <p className="card-text text-white">
+                                                Powered By: •HTML •CSS 
+                                            </p>
+                                            <a href="https://rikkportfolio.vercel.app/" add target="_blank" rel="noreferrer" className="btn btn-outline-light">Visit Website</a>
+                                    </div>
+                                </div>   
+                            </Zoom>
                         </div>
                         <div className='col-md-4'>
-
+                            <Zoom>
+                                <div className="card text-center shadow" style={{ background:"rgb(21,21,21)"}}>
+                                    <div className="overflow">
+                                        <img src={img5} alt="image5" className="card-img-top imagesize"/>
+                                    </div>
+                                    <div className="card-body text-white">   
+                                            <h4 className="">Django Blog</h4>
+                                            <p className="card-text text-white">
+                                                Powered By: •Python Django Framework •HTML/CSS •SQLLITE •Heroku
+                                            </p>
+                                            <a href="https://djangopyblog.herokuapp.com/" add target="_blank" rel="noreferrer" className="btn btn-outline-light">Visit Website</a>
+                                    </div>
+                                </div>   
+                            </Zoom>
                         </div>
                     </div>
                 </div>
